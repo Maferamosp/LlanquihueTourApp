@@ -2,8 +2,7 @@
 
 ## Descripción general del sistema
 
-Sistema básico compuesto por múltiples clases relacionadas.
-
+Llanquihue Tour App es una aplicación Java orientada a objetos que permite cargar información de clientes, guías turísticos y tours desde un archivo de texto. Los datos se almacenan en colecciones (ArrayList) y pueden ser recorridos y filtrados según distintos criterios, como el tipo de tour, aplicando conceptos de encapsulamiento, composición y manejo de archivos.
 
 ## Estructura general del proyecto
 
@@ -21,13 +20,11 @@ Sistema básico compuesto por múltiples clases relacionadas.
 1. Clona el repositorio desde GitHub:
 
 ```bash
-git clone https://github.com/Maferamosp/desarrollo-orientado-a-objetos-I.git
+git clone https://github.com/Maferamosp/LlanquihueTourApp.git
 ```
 
 2. Abre el proyecto en IntelliJ IDEA.
 
-3. Verifica que los archivos `.txt` estén correctamente ubicados.
+3. Ejecuta el archivo `Main.java` desde el paquete `ui`.
 
-4. Ejecuta el archivo `Main.java` desde el paquete `app`.
-
-5. Sigue las instrucciones en consola o en la interfaz gráfica (si corresponde).
+4. Sigue las instrucciones en consola o en la interfaz gráfica (si corresponde).
