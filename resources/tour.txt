@@ -1,0 +1,5 @@
+Carlos;1;Maria;+56949858;2;2;Playa;100;Tour a la playa
+Franco;2;Fer;+56949858;2;2;Bosque;100;Tour a la bosque
+Chris;3;Maria;+56949858;2;2;Montaña;100;Tour a la montaña
+Sebas;4;Fer;+56949858;2;2;Cafeteria;100;Tour a la cafeteria
+Santi;5;Maria;+56949858;2;2;Rio;100;Tour a la rio
