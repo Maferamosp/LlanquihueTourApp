@@ -8,8 +8,12 @@ Llanquihue Tour App es una aplicación Java orientada a objetos que permite carg
 
 ```plaintext
 📁 src/
-├── app/         # Clase principal con el método main
-├── model/       # Clases de dominio (Colaborador, Cliente, Direccion, Persona, etc.)
+├── ui/          # Clase principal con el método main
+├── model/       # Clases de dominio (Cliente, GuiaTuristico, Tour)
+├── data/        # Clase GestorDatos para la lectura del archivo
+📁 resources/
+├── tour.txt     # Archivo con los datos de clientes, guías y tours
+
 ````
 
 ---
