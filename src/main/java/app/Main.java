@@ -1,4 +1,4 @@
-package main.java.ui;
+package main.java.app;
 
 import main.java.data.GestorDatos;
 import main.java.model.Cliente;
@@ -36,6 +36,14 @@ public class Main {
     }
 
     public void gestorDeProveedores(GestorDatos gestorDatos) throws Exception {
+        this.agregarProveedoresEnTxt(gestorDatos);
+
+        this.leerProveedoresEnTxt(gestorDatos);
+
+        this.filtrarProveedoresPorId(gestorDatos);
+    }
+
+    public void agregarProveedoresEnTxt(GestorDatos gestorDatos) throws Exception {
         Proveedores proveedores = new Proveedores("Comida");
 
         proveedores.agregarProveedor(new Proveedor("Maria", "Economic Corp", "L-123"));
@@ -43,7 +51,9 @@ public class Main {
         proveedores.agregarProveedor(new Proveedor("Cristina", "Fund Corp", "L-865"));
 
         gestorDatos.guardarProveedoresEnTxt(proveedores);
+    }
 
+    public void leerProveedoresEnTxt(GestorDatos gestorDatos) {
         Proveedores proveedoresGuardados = gestorDatos.leerDatosDeProveedorDesdeTxt();
 
         if (proveedoresGuardados == null) {
@@ -51,7 +61,8 @@ public class Main {
         }
         System.out.println("Proveedores" + "\n");
         System.out.println("Tipo de servicio: " + proveedoresGuardados.getTipoDeServicio() + "\n");
-        System.out.println("Datos de los proveedores: " + "\n");
+        System.out.println("\n -----------------");
+
 
         for (Proveedor pg: proveedoresGuardados.getListaProveedores()) {
             System.out.println("Id: " + pg.getId() + "\n");
@@ -59,8 +70,9 @@ public class Main {
             System.out.println("Nombre de la empresa: " + pg.getNombreEmpresa() + "\n");
             System.out.println("\n -----------------");
         }
+    }
 
-
+    public void filtrarProveedoresPorId(GestorDatos gestorDatos) {
         System.out.println("Obtener el proveedor por el ID: L-865");
 
         Proveedor proveedorPorId = gestorDatos.obtenerElProveedorPorId("L-865");
