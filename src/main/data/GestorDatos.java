@@ -1,6 +1,6 @@
-package main.java.data;
+package main.data;
 
-import main.java.model.*;
+import main.model.*;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -120,4 +120,30 @@ public class GestorDatos {
 
         return proveedorFiltrado;
     }
-}
+
+    public void mostrarServicios() {
+
+        RutaGastronomica ruta1 = new RutaGastronomica(
+                "Sabores del Sur", 4, 5);
+
+        RutaGastronomica ruta2 = new RutaGastronomica(
+                "Ruta del Chocolate", 3, 4);
+
+        ExcursionCultural excursion1 = new ExcursionCultural(
+                "Museo Colonial", 2, "Fuerte San Antonio");
+
+        ExcursionCultural excursion2 = new ExcursionCultural(
+                "Puerto Varas Historico", 4, "Iglesia");
+
+        System.out.println(ruta1);
+        System.out.println();
+
+        System.out.println(ruta2);
+        System.out.println();
+
+        System.out.println(excursion1);
+        System.out.println();
+
+        System.out.println(excursion2);
+    }
+    }

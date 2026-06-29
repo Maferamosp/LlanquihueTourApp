@@ -1,15 +1,15 @@
-package main.java.app;
+package main.app;
 
-import main.java.data.GestorDatos;
-import main.java.model.Cliente;
-import main.java.model.Proveedor;
-import main.java.model.Proveedores;
+import main.data.GestorDatos;
+import main.model.Cliente;
+import main.model.Proveedor;
+import main.model.Proveedores;
 
 import java.util.ArrayList;
 
 public class Main {
 
-    public void main(String[] args) throws Exception {
+    public  void main(String[] args) throws Exception {
         GestorDatos gestorDatos = new GestorDatos();
 
         ArrayList<Cliente> clientesColleccion = gestorDatos.cargarClientes();
@@ -33,6 +33,8 @@ public class Main {
         }
 
         this.gestorDeProveedores(gestorDatos);
+
+        gestorDatos.mostrarServicios();
     }
 
     public void gestorDeProveedores(GestorDatos gestorDatos) throws Exception {
