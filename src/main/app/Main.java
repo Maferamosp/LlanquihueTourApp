@@ -4,8 +4,10 @@ import main.data.GestorDatos;
 import main.model.Cliente;
 import main.model.Proveedor;
 import main.model.Proveedores;
+import main.model.ServicioTuristico;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Main {
 
@@ -35,6 +37,11 @@ public class Main {
         this.gestorDeProveedores(gestorDatos);
 
         gestorDatos.mostrarServicios();
+        System.out.println("\n -----------------");
+        System.out.println("\n Lista de servicios: \n");
+
+
+        this.mostrarInformacionDeListaDeServicios(gestorDatos);
     }
 
     public void gestorDeProveedores(GestorDatos gestorDatos) throws Exception {
@@ -89,5 +96,13 @@ public class Main {
         System.out.println("Nombre: " + proveedorPorId.getNombre() + "\n");
         System.out.println("Nombre de la empresa: " + proveedorPorId.getNombreEmpresa() + "\n");
         System.out.println("\n -----------------");
+    }
+
+    public void mostrarInformacionDeListaDeServicios(GestorDatos gestorDatos) {
+        List<ServicioTuristico> listaDeServicios = gestorDatos.crearListaDeServicios();
+
+        for (ServicioTuristico su: listaDeServicios) {
+            su.mostrarInformacion();
+        }
     }
 }

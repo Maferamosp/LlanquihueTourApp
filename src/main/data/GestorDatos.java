@@ -4,6 +4,7 @@ import main.model.*;
 
 import java.io.*;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class GestorDatos {
@@ -146,4 +147,16 @@ public class GestorDatos {
 
         System.out.println(excursion2);
     }
+
+    public List<ServicioTuristico> crearListaDeServicios() {
+        ArrayList<ServicioTuristico> listaDeServicios = new ArrayList<>();
+
+        listaDeServicios.add(new RutaGastronomica("Sabores del Sur", 4, 5));
+        listaDeServicios.add(new RutaGastronomica("Sabores del Norte", 2, 3));
+        listaDeServicios.add(new ExcursionCultural("Museo Colonial", 2, "Fuerte San Antonio"));
+        listaDeServicios.add(new ExcursionCultural("Puerto Varas Historico", 4, "Iglesia"));
+        listaDeServicios.add(new PaseoLacustre("Puerto Varas Historico", 4, "Barco"));
+
+        return listaDeServicios;
     }
+}
