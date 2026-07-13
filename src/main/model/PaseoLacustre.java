@@ -1,6 +1,6 @@
 package main.model;
 
-public class PaseoLacustre extends ServicioTuristico {
+public class PaseoLacustre extends ServicioTuristico implements Registrable {
 
     private String tipoEmbarcacion;
 
@@ -22,5 +22,10 @@ public class PaseoLacustre extends ServicioTuristico {
         return "Paseo Lacustre" +
                 "\n" + super.toString() +
                 "\nTipo de embarcación: " + tipoEmbarcacion;
+    }
+
+    @Override
+    public String mostrarResumen() {
+        return toString();
     }
 }

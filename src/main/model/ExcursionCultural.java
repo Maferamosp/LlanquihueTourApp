@@ -1,6 +1,6 @@
 package main.model;
 
-public class ExcursionCultural extends ServicioTuristico{
+public class ExcursionCultural extends ServicioTuristico implements Registrable {
     private String lugarHistorico;
 
     public ExcursionCultural(String nombre, int duracionHoras, String lugarHistorico) {
@@ -18,8 +18,13 @@ public class ExcursionCultural extends ServicioTuristico{
 
     @Override
     public String toString() {
-        return "Excursión Cultural" +
+        return "Excursion Cultural" +
                 "\n" + super.toString() +
                 "\nLugar histórico: " + lugarHistorico;
+    }
+
+    @Override
+    public String mostrarResumen() {
+        return toString();
     }
 }
