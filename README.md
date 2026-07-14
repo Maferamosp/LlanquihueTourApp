@@ -18,6 +18,23 @@ Llanquihue Tour App es una aplicación Java orientada a objetos que permite carg
 ````
 
 ---
+## Clases e interfaces utilizadas
+
+### Clases
+
+- `ServicioTuristico` (superclase)
+- `RutaGastronomica`
+- `PaseoLacustre`
+- `ExcursionCultural`
+- `GestorDatos`
+- `GestorEntidades`
+- `Main`
+
+### Interfaz
+
+- `Registrable`
+----
+
 
 
 ## Instrucciones para clonar y ejecutar el proyecto
@@ -28,8 +45,13 @@ Llanquihue Tour App es una aplicación Java orientada a objetos que permite carg
 git clone https://github.com/Maferamosp/LlanquihueTourApp.git
 ```
 
-2. Abre el proyecto en IntelliJ IDEA.
+## Instrucciones de ejecución
 
-3. Ejecuta el archivo `Main.java` desde el paquete `ui`.
-
-4. Sigue las instrucciones en consola o en la interfaz gráfica (si corresponde).
+1. Abrir el proyecto en IntelliJ IDEA o NetBeans.
+2. Ejecutar la clase `Main.java`.
+3. Utilizar el menú mostrado mediante `JOptionPane`.
+4. Seleccionar una opción para:
+    - Crear una Ruta Gastronómica.
+    - Crear un Paseo Lacustre.
+    - Mostrar las entidades registradas.
+    - Salir del programa.
