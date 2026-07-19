@@ -28,6 +28,7 @@ Llanquihue Tour App es una aplicación Java orientada a objetos que permite carg
 - `ExcursionCultural`
 - `GestorDatos`
 - `GestorEntidades`
+- `GestorReservas`
 - `Main`
 
 ### Interfaz
@@ -53,5 +54,7 @@ git clone https://github.com/Maferamosp/LlanquihueTourApp.git
 4. Seleccionar una opción para:
     - Crear una Ruta Gastronómica.
     - Crear un Paseo Lacustre.
+    - Registrar reservas.
     - Mostrar las entidades registradas.
+    - Mostrar las reservas registradas.
     - Salir del programa.
